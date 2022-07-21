@@ -1,0 +1,40 @@
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+    gap: 4rem;
+}
+.skills-item {
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-color:  hsla(54.6, 100%, 50%, 0.9);
+}
+.front-item,
+.back-item{
+    display: flex;
+    margin-top: 5px;
+}
+.skill-icon {
+    display: flex;
+    margin: 5px 5px 0;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .skills {
+        gap: 1rem;
+    }
+
+    .skills-item {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .skills {
+        flex-wrap: wrap;
+    }
+    
+}

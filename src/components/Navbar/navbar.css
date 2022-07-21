@@ -1,0 +1,67 @@
+/* === NavBar === */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+.menu-link:hover {
+    border-bottom: 2px solid #000;
+    color: #0000FF;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .menu {
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 4rem;
+        right: 100%;
+        opacity: 1;
+        transition: all 1s ease;
+    }
+    
+    .menu.active {
+        background-color: hsla(50.6, 100%, 50%, 0.85);
+        right: 0;
+        opacity: 1;
+        transition: all 1s ease;
+        z-index: 1;
+        padding: 20px 0;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        color: #000;
+        font-size: 25px;
+    }
+
+    
+}
